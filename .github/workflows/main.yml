@@ -16,8 +16,8 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HF }}
-        run: git remote add space https://BrianLan/text-to-image
+        run: git remote add space https://huggingface.co/spaces/BrianLan/text-to-image
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run: git push --force https://BrianLan/text-to-image main
+        run: git push --force https://huggingface.co/spaces/BrianLan/text-to-image main
